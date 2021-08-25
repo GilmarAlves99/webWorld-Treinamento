@@ -39,7 +39,7 @@ main, .content {
 .redes-sociais ul li {
     margin-left: 25px;
     display: inline-block;
-    float: left;
+
     list-style: none;
 }
 
@@ -210,10 +210,6 @@ li.slick-active button {
     height: auto;
 }
 
-.bloco-imagem {
-    height: 300px;
-    border: 1px solid #c5c5c5;
-}
 
 .bloco-imagem strong, p {
     text-align: left;
@@ -230,7 +226,8 @@ li.slick-active button {
 }
 
 .bloco-imagem {
-    height: 300px;
+    width: 29%;
+    height: 350px;
     border: 1px solid #c5c5c5;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -312,7 +309,10 @@ h3 {
     color: #c1c1c1;
     height: 90px;
 }
-
+.footer-2 a{
+color: white;
+    text-decoration: none;
+}
 .footer p {
     width: 90%;
     text-align: left;
@@ -332,7 +332,7 @@ h3 {
     height: 15px;
     display: inline-block;
     background-image: url('../img/clock.png');
-   float: left;
+
     background-repeat: no-repeat;
     padding-left: 5px;
 }
@@ -350,9 +350,11 @@ h3 {
 .local:before {
     background-image: url('../img/local.png');
 }
-.footer{
+
+.footer {
     background-color: rgb(0, 0, 0);
 }
+
 .emailico:before {
     background-image: url('../img/emailico.png');
 }
@@ -362,11 +364,9 @@ h3 {
 }
 
 @media only screen and (max-width: 2100px) {
-    button#btn-mobile{
+    button#btn-mobile {
         display: none;
         width: 0px;
-        
-       
     }
     main {
         width: 100%;
@@ -386,58 +386,67 @@ h3 {
     .content {
         word-wrap: break-word;
     }
-   
-   
 }
+
 @media only screen and (max-width: 845px) {
- 
- .header-2 {
-   
+    .header-2 {
         padding: 0px;
     }
-     .menubottom{
-        width: 60%; 
+    .menubottom {
+        width: 60%;
     }
     .menubottom ul li a {
+        position: relative;
+        top: 15px;
+        color: #ffffff;
         margin-left: 0px;
         font-size: 12px;
     }
     .busca {
         width: 40%;
     }
-    .header-2 input{
+    .header-2 input {
         margin-top: 20px;
         margin-left: -50px;
     }
-    .logo{
+    .logo {
         width: 40%;
-    }.redes-sociais{
-        width: 50%;
-
     }
-    .redes-sociais ul{
+    .redes-sociais {
+        width: 50%;
+    }
+    .redes-sociais ul {
         margin-left: 0%;
     }
     .bloco-logos img {
         width: 90%;
- 
-    }.col-3 {
-         padding-left: 5px; 
-    padding-right: 5px;
-        width: 31%;
     }
-  
-    button#btn-mobile{
+    .col-3 {
+        padding-left: 2.5%;
+        padding-right: 1%;
+    }
+    .img1 {
+        width: 70px;
+    }
+    .col-3 h3 {
+        font-size: 1em;
+    }
+    .col-3 p {
+        font-size: 0.9em;
+    }
+    button#btn-mobile {
         display: block;
-        width: 90px;
+        font-size: 3em;
+        background-color: transparent;
         height: 76px;
-       
+        border: none;
+        color: rgb(59, 59, 59);
     }
-    #menu{
+    #menu {
         display: block;
         position: absolute;
         width: 100%;
-        height: 0px;
+        height: 100%;
         background-color: black;
         top: 60px;
         right: 0;
@@ -447,22 +456,22 @@ h3 {
         transition: .6s;
         text-align: center;
     }
-
-    #nav.active #menu{
+    #nav.active #menu {
         visibility: visible;
-        height: 232px;
+        height: 300px;
         text-align: center;
     }
     .menubottom ul li {
-        display:block;
-      
-    }.menu-urls {
-        height: 73px;
-    
+        display: block;
     }
- 
+    .menu-urls {
+        height: 73px;
+    }
+    .texto-destaque h1 {
+        font-size: 1.5em;
+    }
+    .bloco-imagem {
+width: 80%;  
 
+    }
 }
-
-
-
