@@ -5,9 +5,9 @@
 
 <h1>Oque você verá aqui?</h1>
 
-• Foi feito uma página web com o intuito de exercitar. </br>
+• Foi feito uma página web com o intuito de praticar. </br>
 </br>
-link do site em produção (Ainda não está responsivo) : https://gilmaralves99.github.io/webWorld-Treinamento/index.html
+link do site em produção : https://gilmaralves99.github.io/webWorld-Treinamento/index.html
 
 </br>
 
