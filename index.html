@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
+    <script src="https://kit.fontawesome.com/7a98acb87b.js" crossorigin="anonymous"></script>
     <link href="css/style.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 </head>
@@ -46,8 +47,12 @@
     </header>
     <main class="col-100 menu-urls">
         <div class="header-2">
-            <div class="menu">
-                <ul>
+            <nav id="nav" class="menubottom">
+                <button id="btn-mobile">
+                    <i class="fas fa-bars"></i>
+                </button>
+
+                <ul id="menu">
                     <li>
                         <a href="">Home</a>
                     </li>
@@ -67,9 +72,12 @@
                         <a href="">Contact Us</a>
                     </li>
                 </ul>
-            </div>
+
+            </nav>
+
             <div class="busca">
                 <input placeholder="Search Something" type="text" />
+
             </div>
         </div>
     </main>
@@ -113,7 +121,39 @@
         </div>
     </div>
     <div class="col-100 bloco-imagens-texto">
-        <div class="content">
+        <div class="content-flex">
+            <div class="col-3 bloco-texto bloco-imagem ">
+                <img src="./img/imagem1.png">
+                <p><b>Lorem Ipsum is simply</b></p>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting of the
+                    industry. Lorem
+                    Ipsum has been
+                    the and scrambled it.
+                    atype specimen
+                </p>
+            </div>
+            <div class="col-3 bloco-texto bloco-imagem">
+                <img src="./img/imagem2.png">
+                <p><b>Lorem Ipsum is simply</b></p>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting of the
+                    industry. Lorem
+                    Ipsum has been
+                    the and scrambled it.
+                    atype specimen
+                </p>
+            </div>
+            <div class="col-3 bloco-texto bloco-imagem">
+                <img src="./img/imagem3.png">
+                <p><b>Lorem Ipsum is simply</b></p>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting of the
+                    industry. Lorem
+                    Ipsum has been
+                    the and scrambled it.
+                    atype specimen
+                </p>
+            </div>
+
+
             <div class="col-3 bloco-texto bloco-imagem">
                 <img src="./img/imagem1.png">
                 <p><b>Lorem Ipsum is simply</b></p>
@@ -145,38 +185,7 @@
                 </p>
             </div>
         </div>
-        <div class="content">
-            <div class="col-3 bloco-texto bloco-imagem">
-                <img src="./img/imagem1.png">
-                <p><b>Lorem Ipsum is simply</b></p>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting of the
-                    industry. Lorem
-                    Ipsum has been
-                    the and scrambled it.
-                    atype specimen
-                </p>
-            </div>
-            <div class="col-3 bloco-texto bloco-imagem">
-                <img src="./img/imagem2.png">
-                <p><b>Lorem Ipsum is simply</b></p>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting of the
-                    industry. Lorem
-                    Ipsum has been
-                    the and scrambled it.
-                    atype specimen
-                </p>
-            </div>
-            <div class="col-3 bloco-texto bloco-imagem">
-                <img src="./img/imagem3.png">
-                <p><b>Lorem Ipsum is simply</b></p>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting of the
-                    industry. Lorem
-                    Ipsum has been
-                    the and scrambled it.
-                    atype specimen
-                </p>
-            </div>
-        </div>
+
     </div>
     <div class="col-100 bloco-logos">
         <div class="content">
@@ -193,7 +202,7 @@
             <div class="col-4">
                 <img alt="Puma" title="Puma" src="img/logo4.png" />
             </div>
-        </div>    
+        </div>
     </div>
     <footer>
         <div class="col-100 footer">
@@ -250,7 +259,16 @@
         </div>
     </div>
 
+    <script>
+        const btnMobile = document.getElementById('btn-mobile');
 
+        function toggleMenu() {
+            const nav = document.getElementById('nav');
+            nav.classList.toggle('active');
+        }
+
+        btnMobile.addEventListener('click', toggleMenu);
+    </script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
